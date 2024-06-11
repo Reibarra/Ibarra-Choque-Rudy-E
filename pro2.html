@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./pro2.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ZONA_T</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section text-center text-light bg-primary py-5">
+        <div class="container">
+            <h1 class="display-4">ZONA TURISTICA</h1>
+            <p class="lead">Un buen lugar para empezar</p>
+        </div>
+    </section>
+
+    <!-- Image Selection Section -->
+    <section class="image-selection-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color:brown ;">Selecciona una Destino</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <img src="./imag/imgen1.jpg" class="img-thumbnail" alt="Museo">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="./imag/imgen2.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="./imag/imgen3.jpg" class="img-thumbnail" alt="...">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="./imag/imgen4.jpg" class="img-thumbnail" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aventuras</h5>
+                            <p class="card-text">Encuentra lugares para empezar tu aventura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Instalaciones</h5>
+                            <p class="card-text">Descubre todas nuestras Instalaciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes</h5>
+                            <p class="card-text">Conoce nuestras mejores ofertas en viajes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalLabel">Formulario de Reclamoss</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa tu nombre.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                            <div class="invalid-feedback">
+                                Por favor ingresa un correo electrónico válido.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Reclamos</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Ingresa su reclamo" required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor ingresa su reclamo.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Button Section -->
+    <section class="modal-button-section text-center py-5">
+        <div class="container">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#formModal">
+                RECLAMOS
+            </button>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 Programacion web 2.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./pro2.js"></script>
+</body>
+</html>

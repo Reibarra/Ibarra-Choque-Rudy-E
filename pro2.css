@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./imag/fondo.webp");    
+}
+h1{
+
+}
+h2{
+
+}
+p{
+
+}
+.welcome-section {
+    background-image: url("./imag/pano2.jpg");
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    max-height: 190px;
+    
+}
+.card-body{
+    height: 150px;
+}
+.display-4{
+    color: maroon;
+}
+.lead{
+    color: white;
+}
+.features-section .card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.features-section .card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+}
+.list-group-item {
+    cursor: pointer;
+}
